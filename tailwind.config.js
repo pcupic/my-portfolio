@@ -7,8 +7,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'home-page-image': "url('/src/components/images/514293.jpg')",
-        'twitter': "url('/src/components/images/twitter.png')"
+        'home-page-image': "url('/src/components/images/home.jpg')",
+        'logo': "url('/src/components/images/logo.png')",
+        'about-page-image': "url('/src/components/images/about.jpg')",
+        'contact-page-image': "url('/src/components/images/contact.jpg')",
+        'projects-page-image': "url('/src/components/images/projects.jpg')",
       }
     }
   },
