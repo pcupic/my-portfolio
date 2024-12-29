@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .wrapper {
+        @apply relative bg-gradient-to-b bg-white rounded-2xl overflow-hidden;
+    }
+
+    .wrapper::before {
+        background: conic-gradient(
+            red,
+            transparent 89deg
+        );
+        @apply absolute h-[300%] w-[300%] left-[-100%] top-[-100%] content-[''] animate-spin;
+        z-index: 0; /* Ensure this is behind the content */
+    }
+
+    .content {
+        @apply p-6 bg-white rounded-lg shadow-md; /* Example styling */
+        z-index: 10; /* Ensure this is above the wrapper */
+    }
+}

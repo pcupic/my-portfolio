@@ -6,11 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          }
+        }
+      },
+      animation: {
+        'spin': 'spin 5s linear infinite',
+      },
       backgroundImage: {
         'home-page-image': "url('/src/components/images/home.jpg')",
         'logo': "url('/src/components/images/logo.png')",
         'about-page-image': "url('/src/components/images/about.jpg')",
-        'contact-page-image': "url('/src/components/images/contact.jpg')",
+        'contact-page-image': "url('/src/components/images/contact.png')",
         'projects-page-image': "url('/src/components/images/projects.jpg')",
       }
     }
